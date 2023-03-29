@@ -143,3 +143,36 @@ clj
 
 # resources
 # https://ericnormand.me/guide/how-to-install-clojure#linux-java-1
+
+
+
+##############################
+#
+# install janet
+
+cd ~/
+git clone https://github.com/janet-lang/janet.git
+cd janet
+make -j 4
+make test
+sudo make install
+
+
+
+##############################
+#
+# install nvchad
+
+cd /root/
+
+mv ~/.config/nvim ~/.config/backup-nvim/
+
+rm -r ~/.local/share/nvim
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+git clone git@github.com:jorgediazjr/nvchad-custom.git
+
+ln -Ts ~/nvchad-custom ~/.config/nvim/lua/custom
+
+
