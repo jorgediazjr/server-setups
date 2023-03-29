@@ -11,3 +11,14 @@ sudo make install
 
 # This assumes you have git and a gcc installed.
 # https://stackoverflow.com/questions/62951461/how-to-install-janet-language-on-ubuntu
+#
+# Install Janet Package Manager
+# git clone git@github.com:janet-lang/jpm.git
+# cd jpm
+# janet bootstrap.janet
+#
+# if you already have an installation of jpm configured, you can update jpm with
+#
+# jpm install jpm
+#
+#
